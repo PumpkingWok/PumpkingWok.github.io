@@ -1,7 +1,7 @@
 $("#register").click(() => {
     if(window.u2f && window.u2f.register) {
 
-      const appId = "https://u2fTest.com";
+      const appId = "https://pumpkingwok.github.io";
       var randomValues = new Uint8Array(32);
       window.crypto.getRandomValues(randomValues);
       var challenge = '';
