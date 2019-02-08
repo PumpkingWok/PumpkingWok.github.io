@@ -19,6 +19,7 @@ $("#register").click(() => {
           challenge: btoa(challenge).replace(/\//g,'_').replace(/\+/g,'-').replace(/=/g, '')
       };
       window.u2f.register(appId, [result], [], response => {
+        console.log(response)
         var registration = checkRegistration(response);
         console.log(registration);
       });
